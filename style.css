@@ -1,0 +1,181 @@
+:root {
+    /*PRIMARY*/
+    --White: hsl(0, 0%, 100%);
+    --darkSignUpBg: hsl(217, 28%, 15%);  /*(intro and email sign up background)*/
+    --darkMainBg: hsl(218, 28%, 13%); /*(main background)*/
+    --darkFooter: hsl(216, 53%, 9%); /*(footer background)*/
+    --darkTestimonials: hsl(219, 30%, 18%); /*(testimonials background)*/
+
+    /*ACCENT*/
+    --Cyan: hsl(176, 68%, 64%); /*(inside call-to-action gradient)*/
+    --Blue: hsl(198, 60%, 50%); /*(inside call-to-action gradient)*/
+    --LightRed: hsl(0, 100%, 63%); /*(error)*/
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--White);
+    font-size: 14px;
+    overflow-x: hidden;
+}
+
+
+/* Nav Bar */
+.nav_bar {
+    background: var(--darkMainBg);
+    height: auto;
+    padding: 10px 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+ul {
+    color: var(--White);
+    
+}
+
+li.nav {
+   display: inline;
+}
+
+a {
+    padding: 8px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .heroSvg {
+    width: auto;
+  }
+
+  .list {
+    display: grid;
+    align-items: center;
+    justify-items: end;
+  }
+
+
+/* Hero Section */
+  .heroBg {
+    width: 100%;
+    height: auto;
+    background-color: var(--darkSignUpBg);
+  }
+
+  /* Section 1 */
+  .section1 {
+    background-color: var(--darkSignUpBg);
+    background-image: url(/images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 440px;
+  }
+
+  .btn {
+    height: 40px;
+    position: relative;
+    bottom: 6rem;
+  }
+  
+  /* Section 2 */
+.section2 {
+  background-color: var(--darkMainBg);
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-column-gap: 8rem;
+  grid-row-gap: 5rem;
+}
+
+.section2Svg {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+/* Section 3 */
+.section3 {
+  background-color: var(--darkMainBg);
+}
+
+/* Section 4 */
+.testimonials {
+  background-color: var(--darkMainBg);
+  height: auto;
+  padding: 20px;
+}
+
+.testimonials-tile {
+  background-color: var(--darkTestimonials);
+  height: 200px;
+  width: 350px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  box-shadow: 13px 13px 5px 3px rgba(17,12,41,0.71);
+  -webkit-box-shadow: 13px 13px 5px 3px rgba(17,12,41,0.71);
+  -moz-box-shadow: 13px 13px 5px 3px rgba(17,12,41,0.71);
+}
+
+.index {
+  z-index: 1;
+}
+
+.signUp {
+  background-color: var(--darkSignUpBg);
+  height: 300px;
+  width: 800px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  box-shadow: 13px 13px 5px 3px rgba(17,12,41,0.71);
+  -webkit-box-shadow: 13px 13px 5px 3px rgba(17,12,41,0.71);
+  -moz-box-shadow: 13px 13px 5px 3px rgba(17,12,41,0.71);
+}
+
+input {
+  width: 30rem;
+  height: 3rem;
+}
+
+
+/* Footer */
+.footer {
+  background: var(--darkFooter);
+  height: auto;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 600px) {
+  .section2 {
+   display: grid;
+   grid-template-columns: 1fr;
+   justify-items: center;
+  align-items: center;
+  }
+
+  .signUp {
+    height: auto;
+    width: auto;
+  }
+
+  input {
+    width: auto ;
+  }
+  .logo {
+    width: 150px;
+  }
+}
