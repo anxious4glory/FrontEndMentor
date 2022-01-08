@@ -179,3 +179,7 @@ input {
     width: 150px;
   }
 }
+
+#feedback {
+  color: var(--LightRed);
+}

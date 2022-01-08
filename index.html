@@ -21,7 +21,7 @@
     <title>FrontEnd Mentor</title>
     <link rel="shortcut icon" type="image/jpg" href="./images/favicon-32x32.png"/>
     </head>
-    <body>
+    <body onload='document.form1.text1.focus()'>
 
     <section> <!-- Nav Bar -->
         <nav class="nav_bar">
@@ -185,15 +185,16 @@
                     questions, our support team would be happy to help you.
                 </p>
                 
-                <form action="" class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-80">
-                    <input type="email" name="email" placeholder="johndoe@email.com" class="border rounded-full md:-ml-6 text-black focus:ring-4 focus:ring-blue-300" required>
-                    <button type="submit" value="Submit" class="w-auto md:w-44 h-12 text-white bg-Cyan hover:bg-cyan-300 focus:ring-4 focus:ring-blue-300 
+                <form action="" class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-80" name="form1">
+                    <input type="email"  name='text1' class="border rounded-full md:-ml-6 text-black focus:ring-4 focus:ring-blue-300">
+                    <button type="submit" value="Submit" onclick="ValidateEmail(document.form1.text1)" class="w-auto md:w-44 h-12 text-white bg-Cyan hover:bg-cyan-300 focus:ring-4 focus:ring-blue-300 
                     font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 
                     dark:focus:ring-blue-800">
                     Get Started
                     </button>
+                    <span id="feedback"></span>
+                </form>
             </div>
-            
         </div>
     </section>
 
@@ -265,6 +266,7 @@
 
     <script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js" integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
+    <script src="/index.js"></script>
     <script>
         
     </script>
